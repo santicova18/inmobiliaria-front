@@ -1,0 +1,26 @@
+# Variables de entorno
+.env
+.env.local
+env/
+venv/
+
+# Node / Next
+node_modules/
+.next/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDEs
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Backend
+backend/
