@@ -28,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${playfair.variable} font-sans bg-background text-foreground min-h-screen`}>
-        <div className="mx-auto flex min-h-screen max-w-7xl flex-col px-4 pb-24 sm:px-6">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
