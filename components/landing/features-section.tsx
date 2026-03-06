@@ -35,9 +35,9 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <div className="text-center">
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+          <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl text-balance">
             Todo lo que necesitas en un solo lugar
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground text-pretty">

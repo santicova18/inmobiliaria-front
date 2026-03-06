@@ -38,12 +38,12 @@ export default function AvailabilitySection() {
 
   return (
     <section className="py-20 md:py-28" id="disponibilidad">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-[1400px] px-6">
         <div className="text-center mb-12">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
             <Map className="h-7 w-7 text-primary" />
           </div>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+          <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl text-balance">
             Disponibilidad de Lotes
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground text-pretty">

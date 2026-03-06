@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${playfair.variable} font-sans bg-background text-foreground min-h-screen`}>
+      <body className={`${inter.variable} ${playfair.variable} font-sans bg-background text-foreground min-h-screen overflow-x-hidden`}>
         {children}
       </body>
     </html>
