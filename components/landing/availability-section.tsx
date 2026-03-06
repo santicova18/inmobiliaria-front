@@ -38,7 +38,7 @@ export default function AvailabilitySection() {
 
   return (
     <section className="py-20 md:py-28" id="disponibilidad">
-      <div className="mx-auto max-w-[1400px] px-6">
+      <div className="mx-auto w-full max-w-screen-xl px-6">
         <div className="text-center mb-12">
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
             <Map className="h-7 w-7 text-primary" />

@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-md">
-      <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex w-full max-w-screen-xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
             <Home className="h-5 w-5 text-primary-foreground" />

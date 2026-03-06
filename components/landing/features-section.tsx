@@ -35,7 +35,7 @@ const features = [
 export default function FeaturesSection() {
   return (
     <section className="py-20 md:py-28">
-      <div className="mx-auto max-w-[1400px] px-6">
+      <div className="mx-auto w-full max-w-screen-xl px-6">
         <div className="text-center">
           <h2 className="font-serif text-3xl font-bold text-foreground sm:text-4xl md:text-5xl text-balance">
             Todo lo que necesitas en un solo lugar

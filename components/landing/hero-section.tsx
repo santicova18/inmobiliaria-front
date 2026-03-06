@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/40 to-background" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-[1400px] flex-col items-center px-6 py-24 text-center md:py-32">
+      <div className="relative mx-auto flex w-full max-w-screen-xl flex-col items-center px-6 py-24 text-center md:py-32">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-2 backdrop-blur-sm">
           <MapPin className="h-4 w-4 text-accent" />
           <span className="text-sm font-medium text-primary-foreground">
