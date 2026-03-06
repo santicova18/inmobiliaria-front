@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { getUserData } from "@/lib/api";
 import Link from "next/link";
 import {
@@ -50,7 +51,11 @@ const quickLinks = [
 ];
 
 export default function DashboardHome() {
-  const user = typeof window !== "undefined" ? getUserData() : null;
+  const [user, setUser] = useState<ReturnType<typeof getUserData>>(null);
+
+  useEffect(() => {
+    setUser(getUserData());
+  }, []);
 
   return (
     <div className="mx-auto max-w-5xl">

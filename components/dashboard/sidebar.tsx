@@ -17,7 +17,7 @@ import {
   Shield,
   LayoutGrid,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const clientLinks = [
   { href: "/dashboard", label: "Inicio", icon: Home },
@@ -36,9 +36,14 @@ const adminLinks = [
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const user = typeof window !== "undefined" ? getUserData() : null;
-  const isAdmin = user?.rol === "Administrador";
+  const [user, setUser] = useState<ReturnType<typeof getUserData>>(null);
   const [collapsed, setCollapsed] = useState(false);
+
+  useEffect(() => {
+    setUser(getUserData());
+  }, []);
+
+  const isAdmin = user?.rol === "Administrador";
 
   return (
     <aside

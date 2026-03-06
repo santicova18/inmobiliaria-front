@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { apiFetch, getToken } from "@/lib/api";
 import {
   Shield,

@@ -14,7 +14,7 @@ export default function HeroSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-foreground/70 via-foreground/40 to-background" />
       </div>
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 pb-32 pt-24 text-center md:pb-40 md:pt-32">
@@ -36,17 +36,17 @@ export default function HeroSection() {
           compra transparente, pagos flexibles y soporte dedicado.
         </p>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <Link
             href="/registro"
-            className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg transition-all hover:bg-primary/90 hover:shadow-xl sm:w-auto"
           >
             Comenzar ahora
             <ArrowRight className="h-5 w-5" />
           </Link>
           <Link
             href="/login"
-            className="inline-flex items-center justify-center gap-2 rounded-xl border border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-base font-semibold text-primary-foreground backdrop-blur-sm transition-all hover:bg-primary-foreground/20"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-base font-semibold text-primary-foreground backdrop-blur-sm transition-all hover:bg-primary-foreground/20 sm:w-auto"
           >
             Ya tengo cuenta
           </Link>

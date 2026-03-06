@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getUserData, logout } from "@/lib/api";
 import {
   Home,
@@ -17,7 +17,11 @@ import {
 export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const user = typeof window !== "undefined" ? getUserData() : null;
+  const [user, setUser] = useState<ReturnType<typeof getUserData>>(null);
+
+  useEffect(() => {
+    setUser(getUserData());
+  }, []);
 
   const isActive = (path: string) => pathname === path;
 
